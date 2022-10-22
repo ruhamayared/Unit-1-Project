@@ -1,6 +1,6 @@
-# My First Web Application
+# Random Cocktails for a Fun Night
 ## Unit 1 Project
-###### A simple web application that displays cocktail information for a fun night using the ...api.
+###### A simple web application that displays cocktail information for a fun night using The Cocktail DB API.
 
 #### By Ruhama Yared
 
@@ -12,13 +12,13 @@
 - jQuery
 - Google Fonts
 - jQuery Modal
-- ... api
+- [My API](https://rapidapi.com/thecocktaildb/api/the-cocktail-db/)
 
 
 ### Wireframe
 
-![Web Application](https://i.imgur.com/fdx64sK.png)
-![Mobile Application](https://i.imgur.com/vkwJa8R.png)
+![Web Application](https://i.imgur.com/SJxmpxE.png)
+![Mobile Application](https://i.imgur.com/34gUdqx.png)
 
 
 ### Daily Plan
@@ -26,7 +26,7 @@
 | Day | Goal |
 |-----|------|
 | 1 | Choose and test API, write all boiler-plate code |
-| 2 | Render data to screen, create form |
+| 2 | Render data to screen, create button, and form |
 | 3 | Design page using CSS |
 | 4 | Test and retest, make final changes |
 | 5 | Deploy using vercel |
