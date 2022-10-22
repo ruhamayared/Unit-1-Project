@@ -1,9 +1,9 @@
 
-const apiKey = "tHKB9YHAkwQvtyyI3JVvIgtt"
+const apiKey = "16A4EHTL0Krje4QHZ"
 
 
 function cocktailSearch(){
-    const url = `http://api-cocktails.herokuapp.com/api/v1/cocktails${apiKey}`
+    const url = ""
     
     //Make our request
     $.ajax(url)

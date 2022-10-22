@@ -1,6 +1,6 @@
 # My First Web Application
 ## Unit 1 Project
-###### A simple web application that displays beer information using the 
+###### A simple web application that displays cocktail information for a fun night using the ...api.
 
 #### By Ruhama Yared
 
