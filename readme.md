@@ -1,4 +1,4 @@
-# Random Cocktails for a Fun Night
+# What's for a Drink?
 ## Unit 1 Project
 ###### A simple web application that displays cocktail information for a fun night using The Cocktail DB API.
 
