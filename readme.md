@@ -1,4 +1,4 @@
-# What's for a Drink?
+# What's there to Drink?
 ## Unit 1 Project
 ###### A simple web application that displays cocktail information for a fun night using The Cocktail DB API.
 
