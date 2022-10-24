@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(204, 239, 228);
+    background: linear-gradient(to right top, rgb(204, 239, 228), #a9eeb7);
 }
 
 *{
@@ -12,14 +12,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px 20px 10px 20px;
 
 }
 
 .glass {
     background: white;
-    min-height: 80vh;
-    width: 60%;
-    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    min-height: 30vh;
+    width: 55%;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.1));
     border-radius: 20px;
     z-index: 2;
     backdrop-filter: blur(2rem);
@@ -33,7 +34,6 @@ main{
     position: absolute;
     border-radius: 50%;
     position: fixed;
-    
 }
 
 .circle1{
@@ -43,8 +43,21 @@ main{
 
 .circle2{
     bottom: 5%;
-    left: 10%;
+    left: 17%;
 }
+
+.circle3{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    border-radius: 50%;
+    position: fixed;
+    top: 25%;
+    right: 20%;
+}
+
 
 img{
     width: 200px;
@@ -57,6 +70,7 @@ img{
     width: 50px;
     height: 50px;
     border-radius: 15px 5px;
+    margin: 0 10px 0 10px;
 
 }
 
