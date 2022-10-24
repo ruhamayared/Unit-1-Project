@@ -1,6 +1,8 @@
 body{
     background-color: rgb(204, 239, 228);
-    
+}
+*{
+    text-align: center;
 }
 
 img{
@@ -9,39 +11,42 @@ img{
 }
 #h1image{
     width: 100%;
-    width: 100px;
-    height: 90px;
-    background-color: rgb(204, 239, 228);
+    width: 60px;
+    height: 60px;
+    border-radius: 15px 5px;
+
 }
 
 h1{
-    font-size: xxx-large;
+    font-size: 50px;
     font-family: "Trirong", serif;
     margin: 0;
 }
 
 body{
     font-family: "Trirong", serif;
+    font-size: 20px;
 }
 
 button{
     font-family: "Trirong", serif;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-size: 20px;
     text-align: center;
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #04AA6D;
+    background-color: #3e8e41;
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px rgb(149, 211, 130);
+    box-shadow: 0 7px rgb(149, 211, 130);
 }
 
-button:hover {background-color: #7bcd7e}
+button:hover {background-color: #6eb371}
 
 button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px rgb(176, 228, 160);
+  box-shadow: 0 5px #04AA6D;
   transform: translateY(4px);
 }
+
