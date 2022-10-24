@@ -1,0 +1,47 @@
+body{
+    background-color: rgb(204, 239, 228);
+    
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+#h1image{
+    width: 100%;
+    width: 100px;
+    height: 90px;
+    background-color: rgb(204, 239, 228);
+}
+
+h1{
+    font-size: xxx-large;
+    font-family: "Trirong", serif;
+    margin: 0;
+}
+
+body{
+    font-family: "Trirong", serif;
+}
+
+button{
+    font-family: "Trirong", serif;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px rgb(149, 211, 130);
+}
+
+button:hover {background-color: #7bcd7e}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px rgb(176, 228, 160);
+  transform: translateY(4px);
+}
