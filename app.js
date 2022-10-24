@@ -31,11 +31,18 @@ function randomDrink(){
 }
 //randomDrink()
 
+const ing = ["strIngredient1", "strIngredient2", "strIngredient3", "strIngredient4", "strIngredient5", "strIngredient6"]
+
 function render() {
     $p1.text(`Name: ${drinkData.drinks[0].strDrink} (${drinkData.drinks[0].strAlcoholic})`)
     $p2.html(`<img src="${drinkData.drinks[0].strDrinkThumb}">`)
-    
-    $p4.text(`Ingredients: ${drinkData.drinks[0].strMeasure1} ${drinkData.drinks[0].strIngredient1}, ${drinkData.drinks[0].strMeasure2} ${drinkData.drinks[0].strIngredient2}, ${drinkData.drinks[0].strMeasure3} ${drinkData.drinks[0].strIngredient3}, ${drinkData.drinks[0].strMeasure4} ${drinkData.drinks[0].strIngredient4}, ${drinkData.drinks[0].strMeasure5} ${drinkData.drinks[0].strIngredient5}`)
+    $p4.text(`Ingredients: ${ing.map((drinkIng) => {
+        if (drinkData.drinks[0][drinkIng] !== null){
+            return (` ${drinkData.drinks[0][drinkIng]}`)
+        }
+
+
+    })} `)
     $p5.text(`Preparation: ${drinkData.drinks[0].strInstructions}`)
 }
 
