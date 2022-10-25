@@ -40,7 +40,6 @@ function render() {
         if (drinkData.drinks[0][drinkIng] !== null){
             return (` ${drinkData.drinks[0][drinkIng]}`)
         }
-
     })}`)
     $p5.text(`Preparation: ${drinkData.drinks[0].strInstructions}`)
 }
