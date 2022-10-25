@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right top, rgb(204, 239, 228), #a9eeb7);
+    background: linear-gradient(to right top, rgb(165, 230, 230), #96e4e0);
 }
 
 *{
@@ -8,7 +8,7 @@ body{
 
 main{
     min-height: 100vh;
-    background: linear-gradient(to right top, rgb(204, 239, 228), #a9eeb7);
+    background: linear-gradient(to right top, rgb(165, 230, 230), #96e4e0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,7 +58,6 @@ main{
     right: 20%;
 }
 
-
 img{
     width: 200px;
     height: 200px;
@@ -93,17 +92,21 @@ button{
     cursor: pointer;
     outline: none;
     color: #fff;
-    background-color: #3e8e41;
+    background-color: #4eb1b8e2;
     border: none;
-    border-radius: 15px;
-    box-shadow: 0 5px rgb(149, 211, 130);
+    border-radius: 5px;
+    box-shadow: 0 5px rgb(130, 205, 211);
 }
 
-button:hover {background-color: #6eb371}
+button:hover {background-color: #3bc6d5}
 
 button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 3px #04AA6D;
+  background-color: #4fbfb5;
+  box-shadow: 0 3px #036b72;
   transform: translateY(4px);
 }
 
+@media only screen and (max-width: 600px) {
+    
+    
+  }
