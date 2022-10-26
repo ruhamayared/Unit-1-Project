@@ -34,14 +34,33 @@ const ing = ["strIngredient1", "strIngredient2", "strIngredient3", "strIngredien
 const measure = ["strMeasure1", "strMeasure2", "strMeasure3", "strMeasure4", "strMeasure5", "strMeasure6", "strMeasure7", "strMeasure8", "strMeasure9", "strMeasure10", "strMeasure11", "strMeasure12", "strMeasure13", "strMeasure14", "strMeasure15"]
 
 function render() {
+    let drinkIngs = []
+
+    ing.forEach((drinkIng) => {
+        if (drinkData.drinks[0][drinkIng] !== null){
+            drinkIngs.push(drinkData.drinks[0][drinkIng])
+        } 
+    })
+
+    let drinkMeasure = []
+
+    measure.forEach((drinkMeas) => {
+        if (drinkData.drinks[0][drinkMeas] !== null){
+            drinkMeasure.push(drinkData.drinks[0][drinkMeas])
+        } 
+    })
+
+
     $p1.text(`Name: ${drinkData.drinks[0].strDrink} (${drinkData.drinks[0].strAlcoholic})`)
     $p2.html(`<img src="${drinkData.drinks[0].strDrinkThumb}">`)
-    $p4.text(`Ingredients: ${ing.map((drinkIng) => {
-        if (drinkData.drinks[0][drinkIng] !== null){
-            return (` ${drinkData.drinks[0][drinkIng]}`)
-        }
-    })}`)
+    $p4.text(`Ingredients: `)
     $p5.text(`Preparation: ${drinkData.drinks[0].strInstructions}`)
+
+    for(let i = 0; i < drinkIngs.length; i++){
+        let ingIndex = drinkIngs[i]
+        let measIndex = drinkMeasure[i]
+        $p4.append(`${measIndex} ${ingIndex}, `)
+    }
 }
 
 $("button").on("click", (event) => {
@@ -51,3 +70,7 @@ $("button").on("click", (event) => {
     //Update the screen
     randomDrink()
 })
+
+
+//Need to get rid of undefined and last comma!!!
+//Add modal?

@@ -16,7 +16,7 @@ main{
 
 }
 
-.glass {
+.glass{
     background: white;
     min-height: 30vh;
     width: 55%;
@@ -106,7 +106,66 @@ button:active {
   transform: translateY(4px);
 }
 
-@media (max-width: 600px) {
-    
-    
+/* Media queries */
+@media screen and (max-width: 700px) {
+    img{
+        width: 90%;
+        height: auto;
   }
+
+  #h1image{
+    width: 6%;
+    height: auto;
+  }
+
+  .glass{
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    font-size: 100%;
+}
+
+main{
+    font-size: 90%;
+}
+
+button{
+    width: 90%;
+    height: auto;
+    font-size: 100%;
+
+}
+
+}
+
+/*Do I need the min-width?*/
+
+@media screen and (max-width: 1000px) and (min-width: 400px){
+  img{
+    width: 50%;
+    height: auto;
+  }
+
+  #h1image{
+    width: 6%;
+    height: auto;
+  }
+
+  h1 {
+    font-size: 45px;
+}
+
+  .glass{
+    width: 100%;
+    height: auto;
+}
+
+button{
+    width: 50%;
+    height: auto;
+    font-size: 100%;
+}
+
+}
