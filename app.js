@@ -5,9 +5,8 @@ const baseURL = "https://the-cocktail-db.p.rapidapi.com/random.php?"
 
 $p1 = $("#cocktail")
 $p2 = $("#image")
-$p3 = $("#alcoholic")
-$p4 = $("#ing")
-$p5 = $("#prep")
+$p3 = $("#ing")
+$p4 = $("#prep")
 
 
 function randomDrink(){
@@ -53,13 +52,14 @@ function render() {
 
     $p1.text(`Name: ${drinkData.drinks[0].strDrink} (${drinkData.drinks[0].strAlcoholic})`)
     $p2.html(`<img src="${drinkData.drinks[0].strDrinkThumb}">`)
-    $p4.text(`Ingredients: `)
-    $p5.text(`Preparation: ${drinkData.drinks[0].strInstructions}`)
+    $p3.text(`Ingredients: `)
+    $p4.text(`Preparation: ${drinkData.drinks[0].strInstructions}`)
 
     for(let i = 0; i < drinkIngs.length; i++){
         let ingIndex = drinkIngs[i]
         let measIndex = drinkMeasure[i]
-        $p4.append(`${measIndex} ${ingIndex}, `)
+        $p3.append(`${measIndex} ${ingIndex}, `)
+        
     }
 }
 
