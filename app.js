@@ -50,6 +50,7 @@ function render() {
         } 
     })
 
+
     $p1.text(`Name: ${drinkData.drinks[0].strDrink} (${drinkData.drinks[0].strAlcoholic})`)
     $p2.html(`<img src="${drinkData.drinks[0].strDrinkThumb}">`)
     $p3.text(`Ingredients: `)
@@ -59,13 +60,19 @@ function render() {
     for(let i = 0; i < drinkIngs.length; i++){
         let ingIndex = drinkIngs[i]
         let measIndex = drinkMeasure[i]
+
+        if (measIndex && ingIndex) {
+            $p3.append(`${measIndex} ${ingIndex}, `)
+        } else {
+            $p3.append(`${ingIndex}, `)
+        }
        
-        $p3.append(`${measIndex} ${ingIndex}, `)
     }
 
     $p3.text($p3.text().slice(0, -2))
 
 }
+
 
 
 $("button").on("click", (event) => {
@@ -76,6 +83,5 @@ $("button").on("click", (event) => {
     randomDrink()
 })
 
-
-//Need to get rid of undefined!!!
-//Add modal?
+//Add carasoul?
+//Style Name, Ingredients, etc. separately
