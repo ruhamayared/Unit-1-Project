@@ -118,4 +118,4 @@ function swapPhoto(){
 
 setInterval(function(){
     swapPhoto()
-}, 2000)
+}, 1500)
