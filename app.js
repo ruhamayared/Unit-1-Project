@@ -8,6 +8,8 @@ $p1 = $("#cocktail")
 $p2 = $("#image")
 $p3 = $("#ing")
 $p4 = $("#prep")
+$img1 = $("#carousel")
+
 
 //---------------------------------------------------------------------//
 
@@ -62,6 +64,8 @@ function render() {
     $p2.html(`<img src="${drinkData.drinks[0].strDrinkThumb}">`)
     $p3.text(`Ingredients: `)
     $p4.text(`Preparation: ${drinkData.drinks[0].strInstructions}`)
+    $img1.remove()
+
 
 
     //Making a string with the measurements and ingredients 
@@ -94,9 +98,12 @@ $("button").on("click", (event) => {
 
 //Add carasoul
 const images = [
-    "https://www.thecocktaildb.com/images/media/drink/2en3jk1509557725.jpg", "https://www.thecocktaildb.com/images/media/drink/wvtwpp1478963454.jpg", "https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg", "https://www.thecocktaildb.com/images/media/drink/9von5j1504388896.jpg", "https://www.thecocktaildb.com/images/media/drink/rpvtpr1468923881.jpg", "https://www.thecocktaildb.com/images/media/drink/hc9b1a1521853096.jpg", "https://www.thecocktaildb.com/images/media/drink/3k9qic1493068931.jpg", "https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg", "https://www.thecocktaildb.com/images/media/drink/stwiva1619704025.jpg"
+    "https://www.thecocktaildb.com/images/media/drink/2en3jk1509557725.jpg", "https://www.thecocktaildb.com/images/media/drink/2en3jk1509557725.jpg", "https://www.thecocktaildb.com/images/media/drink/wvtwpp1478963454.jpg", "https://www.thecocktaildb.com/images/media/drink/5a3vg61504372070.jpg", "https://www.thecocktaildb.com/images/media/drink/9von5j1504388896.jpg", "https://www.thecocktaildb.com/images/media/drink/rpvtpr1468923881.jpg", "https://www.thecocktaildb.com/images/media/drink/hc9b1a1521853096.jpg", "https://www.thecocktaildb.com/images/media/drink/3k9qic1493068931.jpg", "https://www.thecocktaildb.com/images/media/drink/xxsxqy1472668106.jpg", "https://www.thecocktaildb.com/images/media/drink/stwiva1619704025.jpg", 
+    "https://www.thecocktaildb.com/images/media/drink/zaqa381504368758.jpg", "https://www.thecocktaildb.com/images/media/drink/xrvruq1472812030.jpg", "https://www.thecocktaildb.com/images/media/drink/3xgldt1513707271.jpg", "https://www.thecocktaildb.com/images/media/drink/bglc6y1504388797.jpg", "https://www.thecocktaildb.com/images/media/drink/rvuswq1461867714.jpg", "https://www.thecocktaildb.com/images/media/drink/8xnyke1504352207.jpg", "https://www.thecocktaildb.com/images/media/drink/4c85zq1511782093.jpg", 
+    "https://www.thecocktaildb.com/images/media/drink/zvsre31572902738.jpg", "https://www.thecocktaildb.com/images/media/drink/vysywu1468924264.jpg", "https://www.thecocktaildb.com/images/media/drink/vsrsqu1472761749.jpg"
 ]
 
+//Set up for a hover/click/setInverval event
 let index = 0
 
 function swapPhoto(){
@@ -109,9 +116,6 @@ function swapPhoto(){
     $img1.attr("src", images[index])
 }
 
-$("#carousel").hover(swapPhoto)
-
-
-// $("#carousel").carousel({
-//     interval: 5000
-//   });
+setInterval(function(){
+    swapPhoto()
+}, 2000)

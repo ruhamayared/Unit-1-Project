@@ -33,6 +33,13 @@
 | 5 | Submit |
 
 
+### Final Thoughts
+
+I had so much fun building this web application! I learned so much about what goes into making an interactive website. I am so thankful for all the IA's for helping me talk through the code and helping me fix issues here and there.
+
+As of right now, I have one unresolved issue: I wanted to style "Name", "Ingredients", and "Preparation" separately from the data I am rendering on to the DOM - but I haven't figured out how to do that yet. Other than that, I am happy with everything; I got to put in and get rid of everything I wanted to!
+
+
 ### Link to Project
 [My Project Live Page](https://unit1project.vercel.app/)
 
