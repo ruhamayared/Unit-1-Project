@@ -109,8 +109,8 @@ button:active {
 
 /* Media queries */
 @media screen and (max-width: 750px) {
-    img{
-        width: 90%;
+  img{
+        width: 50%;
         height: auto;
   }
 
