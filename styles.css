@@ -142,7 +142,6 @@ button{
 }
 
 /*Do I need the min-width?*/
-
 @media screen and (max-width: 1000px) and (min-width: 400px){
   img{
     width: 50%;
