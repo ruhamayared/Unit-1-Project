@@ -1,12 +1,12 @@
-body{
+body {
     background: linear-gradient(to right top, rgb(165, 230, 230), #96e4e0);
 }
 
-*{
+* {
     text-align: center;
 }
 
-main{
+main {
     min-height: 100vh;
     background: linear-gradient(to right top, rgb(165, 230, 230), #96e4e0);
     display: flex;
@@ -16,7 +16,7 @@ main{
 
 }
 
-.glass{
+.glass {
     background: white;
     min-height: 30vh;
     width: 55%;
@@ -26,7 +26,8 @@ main{
     backdrop-filter: blur(2rem);
 }
 
-.circle1,.circle2{
+.circle1,
+.circle2 {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
     height: 15rem;
@@ -36,17 +37,17 @@ main{
     position: fixed;
 }
 
-.circle1{
+.circle1 {
     top: 5%;
     right: 15%;
 }
 
-.circle2{
+.circle2 {
     bottom: 5%;
     left: 17%;
 }
 
-.circle3{
+.circle3 {
     background: white;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
     height: 10rem;
@@ -58,13 +59,13 @@ main{
     right: 20%;
 }
 
-img{
+img {
     width: 200px;
     height: 200px;
     border-radius: 10px;
 }
 
-#h1image{
+#h1image {
     width: 100%;
     width: 50px;
     height: 50px;
@@ -73,18 +74,18 @@ img{
 
 }
 
-h1{
+h1 {
     font-size: 50px;
     font-family: Cinzel, serif;
     margin: 10px;
 }
 
-body{
+body {
     font-family: 'Fauna One', serif;
     font-size: 20px;
 }
 
-button{
+button {
     font-family: 'Fauna One', serif;
     padding: 15px 15px;
     margin-top: 18px;
@@ -99,73 +100,76 @@ button{
     box-shadow: 0 5px rgb(130, 205, 211);
 }
 
-button:hover {background-color: #3bc6d5}
+button:hover {
+    background-color: #3bc6d5
+}
 
 button:active {
-  background-color: #4fbfb5;
-  box-shadow: 0 3px #036b72;
-  transform: translateY(4px);
+    background-color: #4fbfb5;
+    box-shadow: 0 3px #036b72;
+    transform: translateY(4px);
 }
 
 /* Media queries */
 @media screen and (max-width: 750px) {
-  img{
+    img {
         width: 50%;
         height: auto;
-  }
+    }
 
-  #h1image{
-    width: 6%;
-    height: auto;
-  }
+    #h1image {
+        width: 6%;
+        height: auto;
+    }
 
-  .glass{
-    width: 100%;
-    height: auto;
-}
+    .glass {
+        width: 100%;
+        height: auto;
+    }
 
-h1, h2 {
-    font-size: 95%;
-}
+    h1,
+    h2 {
+        font-size: 95%;
+    }
 
-main{
-    font-size: 90%;
-}
+    main {
+        font-size: 90%;
+    }
 
-button{
-    width: 90%;
-    height: auto;
-    font-size: 100%;
+    button {
+        width: 90%;
+        height: auto;
+        font-size: 100%;
 
-}
+    }
 
 }
 
 /*Do I need the min-width?*/
-@media screen and (max-width: 1000px) and (min-width: 400px){
-  img{
-    width: 50%;
-    height: auto;
-  }
+@media screen and (max-width: 1000px) and (min-width: 400px) {
+    img {
+        width: 50%;
+        height: auto;
+    }
 
-  #h1image{
-    width: 6%;
-    height: auto;
-  }
+    #h1image {
+        width: 6%;
+        height: auto;
+    }
 
-  h1 {
-    font-size: 45px;
-}
+    h1 {
+        font-size: 45px;
+    }
 
-  .glass{
-    width: 100%;
-    height: auto;
-}
+    .glass {
+        width: 100%;
+        height: auto;
+    }
 
-button{
-    width: 50%;
-    height: auto;
-    font-size: 100%;
-}
+    button {
+        width: 50%;
+        height: auto;
+        font-size: 100%;
+    }
 
 }
